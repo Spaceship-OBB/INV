@@ -59,6 +59,10 @@
   a:hover {
     text-decoration: underline;
   }
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #d4af37 !important;
+}
 </style>
 </head>
 <body>
@@ -79,10 +83,10 @@
         <a href="https://maps.google.com/?cid=17520646726508303361" target="_blank">2. Shin-Sen-Gumi Yakitori Izakaya (20:00)</a>
         <div class="address">📍 地址: 368 E 2nd St, Los Angeles, CA 90012</div>
       </div>
-      <div class="restaurant-item">
-        <a href="https://maps.google.com/?cid=16535792766219925615" target="_blank">3. Izakaya BIZAN(19:30)</a>
-        <div class="address">📍 地址: 333 S Alameda St #314, Los Angeles, CA 90013</div>
-      </div>
+ <div class="restaurant-item">
+    <label for="custom-idea" style="color: #f3e5ab; display: block; margin-bottom: 6px;">3. NANA TO PROPOSE (自定义输入)</label>
+    <input type="text" id="custom-idea" placeholder="请输入你想去的地方或任何建议..." style="width: 100%; padding: 8px; background: #121212; border: 1px solid #3a3a3a; color: #fff; border-radius: 4px; box-sizing: border-box;">
+</div>
     </div>
     
     <div class="rsvp">期待您的回复 (RSVP) ✨</div>
