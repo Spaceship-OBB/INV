@@ -83,13 +83,19 @@
         <a href="https://maps.google.com/?cid=17520646726508303361" target="_blank">2. Shin-Sen-Gumi Yakitori Izakaya (20:00)</a>
         <div class="address">📍 地址: 368 E 2nd St, Los Angeles, CA 90012</div>
       </div>
- <div class="restaurant-item">
-    <label for="custom-idea" style="color: #f3e5ab; display: block; margin-bottom: 6px;">3. NANA TO PROPOSE (自定义输入)</label>
-    <input type="text" id="custom-idea" placeholder="请输入你想去的地方或任何建议..." style="width: 100%; padding: 8px; background: #121212; border: 1px solid #3a3a3a; color: #fff; border-radius: 4px; box-sizing: border-box;">
-</div>
+<div class="restaurant-item">
+    <label for="nana_idea" style="color: #f3e5ab; display: block; margin-bottom: 6px;">3. NANA TO PROPOSE (WHEN, WHERE)</label>
+    <div style="display: flex; gap: 8px;">
+        <input type="text" id="nana_idea" placeholder="请输入你想去的地方..." style="flex: 1; padding: 8px; background: #121212; border: 1px solid #3a3a3a; color: #fff; border-radius: 4px; box-sizing: border-box;">
+        <button type="button" onclick="
+            var idea = document.getElementById('nana_idea').value;
+            if(!idea) { alert('你想啊！'); return; }
+            window.location.href = 'mailto:merxamsy@gmail.com?subject=晚餐地点提议&body=NANA老师想去这里：' + encodeURIComponent(idea);
+        " style="background: #d4af37; color: #121212; border: none; padding: 0 16px; border-radius: 4px; cursor: pointer; font-weight: 500; white-space: nowrap;"> 提交给OBB REVIEW 💌</button>
     </div>
+</div>
     
-    <div class="rsvp">期待您的回复 (RSVP) ✨</div>
+    <div class="rsvp">速回 (RSVP) ✨</div>
   </div>
 </div>
 
